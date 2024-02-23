@@ -1,0 +1,80 @@
+﻿@model IEnumerable<EMS.WebMvc.Models.Candidate>
+
+@{
+    ViewData["Title"] = "PartiesCandidates";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>PartiesCandidates</h2>
+        </div>
+        <div class="col-md-6">
+            <p class="float-end">
+                <a asp-action="CreatePartiesCandidate">Add New Candidate</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CandidateId)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PartyId)
+                            @Html.DisplayNameFor(model => model.PartyName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.StateId)
+                            @Html.DisplayNameFor(model => model.StateName)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CandidateId)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PartyId)
+                                @Html.DisplayFor(model => item.PartyName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.StateId)
+                                @Html.DisplayFor(model => item.StateName)
+                            </td>
+                            <td>
+
+                                @*  <a asp-action="Create" asp-route-id="@item.EmpId"><i class="fa fa-edit"></i></a> |
+                            <a asp-action="Delete" asp-route-id="@item.EmpId"><i class="fa fa-trash"></i></a> *@
+
+                                @Html.ActionLink("Edit", "CreatePartiesCandidate", new { id = item.CandidateId }) |
+                                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+

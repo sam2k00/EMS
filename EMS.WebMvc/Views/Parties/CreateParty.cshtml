@@ -1,0 +1,65 @@
+﻿@model EMS.WebMvc.Models.Partie
+
+@{
+    ViewData["Title"] = "CreateParty";
+}
+
+
+
+<div class="container">
+
+
+    <div class="row">
+        <div class="col-md-6"><h2>Add new Partie</h2></div>
+        <div class="col-md-6">
+            <p class="float-end">                
+                <a asp-action="Index">Back to List</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-6"></div>
+        <div class="col-md-6"> 
+            <form asp-action="SaveParty">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="PartyName" class="control-label"></label>
+                    <input type="hidden" asp-for="PartyId" class="form-control" />
+                    <input asp-for="PartyName" class="form-control" />
+                    <span asp-validation-for="PartyName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SymbolId" class="control-label"></label>
+
+                    <select class="form-control" asp-for="SymbolId">
+                        <option value="">-- Select --</option>
+                        @foreach (var partieSymbol in ViewBag.PartiesSymbol)
+                        {
+                            <option value="@partieSymbol.SymbolId"> @partieSymbol.SymbolName</option>
+                        }
+                    </select>
+
+                    <span asp-validation-for="SymbolId" class="text-danger"></span>
+                </div>
+                <div class="form-group d-grid mt-3">
+                    <input type="submit" value="SaveParty" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+
+        
+    </div>
+
+</div>
+
+
+
+<div>
+    
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

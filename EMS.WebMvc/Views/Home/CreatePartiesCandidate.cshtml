@@ -1,0 +1,73 @@
+﻿@model EMS.WebMvc.Models.Candidate
+
+@{
+    ViewData["Title"] = "CreatePartiesCandidate";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6"><h2>Add new Candidate</h2></div>
+        <div class="col-md-6">
+            <p class="float-end">
+                <a asp-action="PartiesCandidates">Back to Parties Candidates</a>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+            <form asp-action="Savecandidate">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                
+                <div class="form-group">
+                    <input type="hidden" asp-for="CandidateId" class="form-control" />
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                               
+                <div class="form-group">
+                    <label asp-for="PartyName" class="control-label"></label>
+                    
+                    
+                    <select class="form-control" asp-for="PartyId">
+                        <option value="">-- Select --</option>
+                        @foreach (var partie in ViewBag.Parties)
+                        {
+                            <option value="@partie.PartyId"> @partie.PartyName</option>
+                        }
+                    </select>
+
+                    <span asp-validation-for="PartyId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="StateName" class="control-label"></label>                    
+                    
+                    <select class="form-control" asp-for="StateId">
+                        <option value="">-- Select --</option>
+                        @foreach (var state in ViewBag.States)
+                        {
+                            <option value="@state.StateId"> @state.StateName</option>
+                        }
+                    </select>
+
+                    <span asp-validation-for="StateName" class="text-danger"></span>
+                </div>
+                <div class="form-group d-grid mt-3">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

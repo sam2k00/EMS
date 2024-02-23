@@ -1,0 +1,67 @@
+﻿@model IEnumerable<EMS.WebMvc.Models.Symbol>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<div class="container">
+    <duv class="row">
+        <div class="col-md-6">
+            <h2>Symbols List</h2>
+        </div>
+        <div class="col-md-6">
+            <p class="float-end">
+                <a asp-action="Create">Add New</a>
+            </p>
+        </div>
+
+    </duv>
+
+    <div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.SymbolId)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.SymbolName)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.SymbolId)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.SymbolName)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id=item.SymbolId }) |
+                                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+

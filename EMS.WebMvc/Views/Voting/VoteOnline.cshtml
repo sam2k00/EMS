@@ -1,0 +1,24 @@
+﻿@model IEnumerable<EMS.WebMvc.Models.Candidate>
+
+@{
+    ViewData["Title"] = "VoteOnline";
+}
+
+<h2>VoteOnline</h2>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h5>
+                    <p class="card-text">Party: @Html.DisplayFor(modelItem => item.PartyName)</p>
+                    <p class="card-text">State: @Html.DisplayFor(modelItem => item.StateName)</p>
+                    <p class="card-text">Symbol: @Html.DisplayFor(modelItem => item.Partie.PartiSymbol.SymbolName)</p>
+                    <a href="@Url.Action("CandiateVote", new { VoterId = ViewBag.VoterId,CandidateId=item.CandidateId })" class="btn btn-primary">Vote</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

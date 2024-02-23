@@ -1,0 +1,132 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+@model List<Candidate>
+
+
+	<div>
+	<h1>Candidate</h1>
+	</div>
+
+<div>
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addNewModal">Add New Candidate</button>
+</div>
+<div>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Party</th>
+				<th>State</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in @Model)
+			{
+				<tr>
+					<th scope="row">@item.CandidateId</th>
+					<td>@item.Name</td>
+					<td>Party</td>
+					<td>State</td>
+					<td>
+						<a data-value="@item.CandidateId" href="javascript:void(0)" class="btnEdit">Edit</a> |
+						<a data-value="@item.CandidateId" href="javascript:void(0)" class="btnDelete">Delete</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
+
+
+<!-- Modal for Add New -->
+<div class="modal" id="addNewModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Add Candidate</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h3>New candidate</h3>
+				<!-- Your edit form goes here -->
+				<!-- Example: <input type="text" id="editName" /> -->
+
+				<input type="text" id="addName" />
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" id="btns">Add New2</button>
+				<button type="button" class="btn btn-secondary" id="sa" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal for Edit -->
+<div class="modal" id="editModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Edit Candidate</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h3>Edit candidate</h3>
+				<!-- Your edit form goes here -->
+				<!-- Example: <input type="text" id="editName" /> -->
+
+				<input type="text" id="editName" />
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" id="btnSaveEdit">Save changes</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function () {
+		// Edit button click
+		$(".btnEdit").click(function () {
+			var candidateId = $(this).data("value");
+			// Fetch data for the selected candidate using AJAX
+			// Populate the edit form with the fetched data
+			// Show the edit modal
+			$("#editModal").modal("show");
+		});
+
+		// Delete button click
+		$(".btnDelete").click(function () {
+			var candidateId = $(this).data("value");
+			// Make an AJAX call to delete the candidate with the given ID
+			// Refresh the page or update the table after successful deletion
+		});
+
+		// Save changes in edit modal
+		$("#btnSaveEdit").click(function () {
+			// Make an AJAX call to update the candidate data
+			// Refresh the page or update the table after successful update
+			$("#editModal").modal("hide");
+		});
+
+		// Save changes in edit modal
+		$("#btns").click(function () {			
+			$("#addNewModal").modal("hide");
+		});
+	});
+</script>

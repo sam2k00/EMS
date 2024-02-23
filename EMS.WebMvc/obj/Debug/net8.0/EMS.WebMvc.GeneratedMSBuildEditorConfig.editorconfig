@@ -1,0 +1,103 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EMS.WebMvc
+build_property.RootNamespace = EMS.WebMvc
+build_property.ProjectDir = G:\Samir\WorkPlace\ProjectCode\Git\EMS\EMS.WebMvc\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = G:\Samir\WorkPlace\ProjectCode\Git\EMS\EMS.WebMvc
+build_property._RazorSourceGeneratorDebug = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/Home/CreatePartiesCandidate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVQYXJ0aWVzQ2FuZGlkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/Home/PartiesCandidates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYXJ0aWVzQ2FuZGlkYXRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/Parties/CreateParty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGllc1xDcmVhdGVQYXJ0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/Parties/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/States/CreateNewState.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGVzXENyZWF0ZU5ld1N0YXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/States/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/Symbols/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ltYm9sc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/Symbols/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ltYm9sc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/Voters/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm90ZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/Voters/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm90ZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/Voting/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm90aW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/Voting/VoteOnline.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm90aW5nXFZvdGVPbmxpbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Samir/WorkPlace/ProjectCode/Git/EMS/EMS.WebMvc/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-tirpk6et5f
